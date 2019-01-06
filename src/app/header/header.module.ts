@@ -1,23 +1,22 @@
 // Angular's Module
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-// Material's Module
-import { MatToolbarModule, MatIconModule } from '@angular/material';
-
-// Toolbar's Component
+// Toolbar's module
+import { ToolbarModule } from '../toolbar/toolbar.module';
+// Header's Component
 import { DefaultComponent } from './default/default.component';
 
 
 @NgModule({
-  declarations: [DefaultComponent],
+  declarations: [
+    DefaultComponent
+  ],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    MatIconModule
+    ToolbarModule
   ],
   exports: [
     DefaultComponent
   ]
 })
-export class ToolbarModule { }
+export class HeaderModule { }
